@@ -9,7 +9,7 @@ const About = ({isDarkMode}) => {
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 1}}
-    id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
+    id='about' className='w-full px-6 md:px-12 lg:px-20 py-10 scroll-mt-20'>
       <motion.h4 
       initial={{opacity: 0, y: -20}}
       whileInView={{opacity: 1, y: 0}}
@@ -39,7 +39,7 @@ const About = ({isDarkMode}) => {
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.8}}
         className='flex-1'>
-          <p className='mb-10 max-w-2xl font-ovo'>I am a motivated and detail-oriented Full-Stack Developer with a strong foundation in the MERN stack (MongoDB, Express.js, React.js, Node.js).
+          <p className='mb-10 max-w-2xl font-ovo leading-relaxed'>I am a motivated and detail-oriented Full-Stack Developer with a strong foundation in the MERN stack (MongoDB, Express.js, React.js, Node.js).
             I enjoy building scalable web applications and am eager to apply my skills, learn from real-world challenges, and contribute to dynamic development teams.</p>
 
           <motion.ul 
@@ -69,7 +69,7 @@ const About = ({isDarkMode}) => {
           whileInView={{opacity: 1}}
           transition={{ delay: 1.5, duration: 0.6}}
           whileHover={{scale:1.05, duration: 0.3}}
-          className='flex items-center gap-3 sm:gap-5'>
+          className='flex flex-wrap  items-center gap-3 sm:gap-5'>
             {toolsData.map((tool, index) => (
                 <motion.li 
                 whileHover={{scale: 1.1}}

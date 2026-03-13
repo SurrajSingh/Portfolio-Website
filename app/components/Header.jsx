@@ -5,13 +5,13 @@ import { motion } from "motion/react"
 
 const Header = () => {
   return (
-    <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+    <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 px-5 md:px-0'>
         <motion.div 
         initial={{scale: 0}}
         whileInView={{scale: 1}}
         transition={{duration: 0.8, type: 'spring', stiffness: 100}}
         >
-            <Image src={assets.profile_img} className='rounded-full shadow-darkTheme dark:shadow-white w-32 mt-5' alt=''/>
+            <Image src={assets.profile_img} className='rounded-full shadow-darkTheme dark:shadow-white w-32 mt-5' alt='Suraj Singh Profile'/>
         </motion.div>
           <motion.h3 
            initial={{y: -20, opacity: 0}}
@@ -22,12 +22,12 @@ const Header = () => {
            initial={{y: -30, opacity: 0}}
            whileInView={{y: 0, opacity:1}}
            transition={{duration: 0.8, delay: 0.5}} 
-           className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Full-stack developer creating modern, user-friendly web experiences</motion.h1>
+           className='text-3xl sm:text-5xl lg:text-[66px] font-ovo'>Full-stack developer creating modern, user-friendly web experiences</motion.h1>
           <motion.p 
            initial={{opacity: 0}}
            whileInView={{opacity:1}}
            transition={{duration: 0.6, delay: 0.7}} 
-           className='max-w-2xl mx-auto font-ovo'>
+           className='max-w-2xl mx-auto font-ovo leading-relaxed'>
              I build clean, responsive, and user-friendly web applications using modern technologies like React, Tailwind CSS, Node.js, and MongoDB. I enjoy learning, solving problems, and improving my skills by working on real-world projects.
           </motion.p>
           <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
